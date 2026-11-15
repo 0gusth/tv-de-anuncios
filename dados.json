@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-15T20:53:20.637Z",
+ "atualizado": "2026-11-15T20:59:03.640Z",
  "inicio": "2026-11-15T20:41:16.233Z",
  "anuncios": [
   {
@@ -25,7 +25,8 @@
    "ytTitulo": "Meet The Macy’s Gift Guide. She’s curated all the best gifts of the season at Macy's.",
    "ytCanal": "Macy's",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "Sb0v",
@@ -61,7 +62,8 @@
    "ytCanal": "Nationwide",
    "categoria": "Seguros",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "S274",
@@ -97,7 +99,8 @@
    "ytTitulo": "Now Boarding: THE JINGLE JET",
    "ytCanal": "Old Navy",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "g4Dl",
@@ -111,7 +114,8 @@
    "ytTitulo": "Dr. Rick | Rideshare | Progressive Insurance Commercial",
    "ytCanal": "Progressive Insurance",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "Sb5g",
@@ -137,7 +141,8 @@
    "ytCanal": "GEICO Insurance",
    "categoria": "Seguros",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "SoZa",
@@ -152,7 +157,8 @@
    "ytCanal": "American Express Business",
    "categoria": "Negócios e jurídico",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "S2bN",
@@ -177,7 +183,8 @@
    "ytTitulo": "For Mike :30 (feat. Patrick Mahomes) | State Farm® Commercial",
    "ytCanal": "State Farm Insurance",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "SbwO",
@@ -202,7 +209,8 @@
    "ytTitulo": "Savor Card - Cash Back Kitchen :30 | Capital One",
    "ytCanal": "Capital One",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "gqkx",
@@ -260,7 +268,8 @@
    "ytTitulo": "New Balance Global Football | We Got Now | 2026",
    "ytCanal": "newbalance",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "SbZG",
@@ -285,7 +294,8 @@
    "ytTitulo": "Dr. Rick | Tuning In | Progressive Insurance Commercial",
    "ytCanal": "Progressive Insurance",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "S2dD",
@@ -300,7 +310,8 @@
    "ytChecado": 1794775276233,
    "yt": "3un-EqxL_iQ",
    "ytTitulo": "Chipotle | Smoked Brisket | US",
-   "ytCanal": "Chipotle Mexican Grill"
+   "ytCanal": "Chipotle Mexican Grill",
+   "ytRevisado": true
   },
   {
    "id": "5MOs",
@@ -327,7 +338,8 @@
    "ytChecado": 1794775276233,
    "yt": "BDrlb3nzgFE",
    "ytTitulo": "Vinted Claire commercial 2026",
-   "ytCanal": "EssexHopkins468"
+   "ytCanal": "EssexHopkins468",
+   "ytRevisado": true
   },
   {
    "id": "S1Wi",
@@ -438,7 +450,8 @@
    "ytChecado": 1794775276233,
    "yt": "htz5KRQZXRA",
    "ytTitulo": "Skechers - Step In: Pool Boy/ Sofía Vergara (Super Bowl Commercial 2026)",
-   "ytCanal": "Campaign Unpacked"
+   "ytCanal": "Campaign Unpacked",
+   "ytRevisado": true
   },
   {
    "id": "gA42",
@@ -453,7 +466,8 @@
    "ytChecado": 1794775276233,
    "yt": "wsi0hoz6UUk",
    "ytTitulo": "Skechers AERO Burst – “Race Car”",
-   "ytCanal": "SKECHERS"
+   "ytCanal": "SKECHERS",
+   "ytRevisado": true
   },
   {
    "id": "B42H",
@@ -528,7 +542,8 @@
    "ytChecado": 1794775276233,
    "yt": "EBGl2yD2ReE",
    "ytTitulo": "The Kizik Hands-Free Juno 2 | It's a Winter Wonder",
-   "ytCanal": "Kizik"
+   "ytCanal": "Kizik",
+   "ytRevisado": true
   },
   {
    "id": "BjbB",
@@ -543,7 +558,8 @@
    "ytChecado": 1794775276233,
    "yt": "vlFvgRD40kw",
    "ytTitulo": "Storied Diamond Desert Sands of Eternity™ | Fully-Traceable Natural Diamonds",
-   "ytCanal": "Jared Jewelers"
+   "ytCanal": "Jared Jewelers",
+   "ytRevisado": true
   },
   {
    "id": "BRYE",
@@ -558,7 +574,8 @@
    "ytChecado": 1794775276233,
    "yt": "7fw6G6zl0fs",
    "ytTitulo": "Nike Football: The Chance: Rafael Márquez's First Find",
-   "ytCanal": "Nike Australia"
+   "ytCanal": "Nike Australia",
+   "ytRevisado": true
   },
   {
    "id": "BgHm",
@@ -569,11 +586,7 @@
    "video": "https://videos-cdn.ispot.tv/ad/6c0a/BgHm-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/BgHm/under-armour-we-are-football-featuring-justin-jefferson-cam-ward-gunna-diana-flores-rakai-song-by-ni",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytChecado": 1794775276233,
-   "yt": "VwtDPCCY8lo",
-   "ytTitulo": "We Are Football | Under Armour (:30)",
-   "ytCanal": "Under Armour"
+   "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
    "id": "BBPo",
@@ -588,7 +601,8 @@
    "ytChecado": 1794775276233,
    "yt": "iLL53TJN8LM",
    "ytTitulo": "Nike “Why Do It?” Campaign | Official Ad (2025)",
-   "ytCanal": " Creative First- קריאייטיב פירסט"
+   "ytCanal": " Creative First- קריאייטיב פירסט",
+   "ytRevisado": true
   },
   {
    "id": "BfSP",
@@ -663,7 +677,8 @@
    "ytChecado": 1794775276233,
    "yt": "E71HzgSQXSI",
    "ytTitulo": "Resources for Mesothelioma Lawsuits | Simmons Hanly Conroy",
-   "ytCanal": "Simmons Hanly Conroy"
+   "ytCanal": "Simmons Hanly Conroy",
+   "ytRevisado": true
   },
   {
    "id": "SoFD",
@@ -686,11 +701,7 @@
    "video": "https://videos-cdn.ispot.tv/ad/5486/SoOT-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SoOT/wesley-financial-group-chuck-mcdowell-timeshare-cancellation-guy",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytChecado": 1794775276233,
-   "yt": "WPtmET77aEI",
-   "ytTitulo": "Chuck McDowell has fought the timeshare battles #timeshare",
-   "ytCanal": "Wesley Financial Group"
+   "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
    "id": "SoIr",
@@ -769,7 +780,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/b2f6/SYuQ-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SYuQ/american-express-platinum-on-top-of-the-world",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794776284490
   },
   {
    "id": "SYuh",
@@ -780,7 +792,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/8e28/SYuh-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SYuh/american-express-us-open-ticket-of-a-lifetime",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794776284490
   },
   {
    "id": "SYu8",
