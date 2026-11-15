@@ -25,9 +25,9 @@ function pararTudo() {
   ytBox.style.display = "none";
 }
 
-function comandoYT(func) {
+function comandoYT(func, args) {
   if (ytFrame && ytFrame.contentWindow)
-    ytFrame.contentWindow.postMessage(JSON.stringify({ event: "command", func, args: [] }), "*");
+    ytFrame.contentWindow.postMessage(JSON.stringify({ event: "command", func, args: args || [] }), "*");
 }
 
 function tocarISpot(ad, s) {
@@ -47,7 +47,7 @@ function tocarYouTube(ad, s) {
   const f = document.createElement("iframe");
   f.allow = "autoplay; encrypted-media; fullscreen";
   f.src = `https://www.youtube.com/embed/${ad.yt}?enablejsapi=1&autoplay=1&mute=1&controls=0&rel=0` +
-    `&iv_load_policy=3&disablekb=1&playsinline=1&origin=${encodeURIComponent(location.origin)}`;
+    `&iv_load_policy=3&cc_load_policy=0&disablekb=1&playsinline=1&origin=${encodeURIComponent(location.origin)}`;
   f.addEventListener("load", () =>
     f.contentWindow.postMessage(JSON.stringify({ event: "listening", id: 1, channel: "widget" }), "*"));
   ytBox.appendChild(f);
@@ -61,7 +61,11 @@ function tocarYouTube(ad, s) {
     let d; try { d = JSON.parse(e.data); } catch (x) { return; }
     if (d.event === "onError") { clearTimeout(limite); desistir(); return; }
     const estado = d.info && typeof d.info.playerState === "number" ? d.info.playerState : null;
-    if (estado === 1 && !comecou) { comecou = true; clearTimeout(limite); if (somLigado) comandoYT("unMute"); }
+    if (estado === 1 && !comecou) {
+      comecou = true; clearTimeout(limite);
+      comandoYT("unloadModule", ["captions"]);           // sem legenda automática
+      if (somLigado) comandoYT("unMute");
+    }
     if (estado === 0) proximo();
   };
   window.addEventListener("message", ouvinte);
