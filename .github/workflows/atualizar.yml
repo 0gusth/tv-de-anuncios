@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main          # sempre o código mais novo, mesmo num "Re-run"
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -26,4 +28,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add dados.json
           git commit -m "Atualiza comerciais no ar"
+          git pull --rebase -X theirs origin main || true
           git push
