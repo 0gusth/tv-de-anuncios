@@ -134,15 +134,29 @@ async function buscarYouTube(q) {
   if (busca.error) throw new Error(busca.error.message);
   const itens = (busca.items || []).filter((i) => i.id && i.id.videoId);
   if (!itens.length) return [];
-  const ids = itens.map((i) => i.id.videoId).join(",");
-  const det = await (await fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${ids}&key=${YT_API_KEY}`)).json();
-  const dur = Object.fromEntries((det.items || []).map((v) => [v.id, iso(v.contentDetails && v.contentDetails.duration)]));
+  const det = await detalhes(itens.map((i) => i.id.videoId));
   return itens.map((i) => ({
     id: i.id.videoId,
     titulo: entidades(i.snippet.title),
     canal: entidades(i.snippet.channelTitle),
-    duracao: dur[i.id.videoId] || 0,
+    duracao: det[i.id.videoId] ? det[i.id.videoId].duracao : 0,
+    vertical: det[i.id.videoId] ? det[i.id.videoId].vertical : false,
   }));
+}
+
+// duração e formato (vídeo em pé = Shorts, não é o filme de TV). Custa 1 unidade a cada 50 vídeos.
+async function detalhes(ids) {
+  const saida = {};
+  for (let i = 0; i < ids.length; i += 50) {
+    const lote = ids.slice(i, i + 50).join(",");
+    const r = await (await fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails,player&maxWidth=1000&id=${lote}&key=${YT_API_KEY}`)).json();
+    if (r.error) throw new Error(r.error.message);
+    for (const v of r.items || []) {
+      const w = +(v.player && v.player.embedWidth) || 16, h = +(v.player && v.player.embedHeight) || 9;
+      saida[v.id] = { duracao: iso(v.contentDetails && v.contentDetails.duration), vertical: h > w };
+    }
+  }
+  return saida;
 }
 
 function escolher(ad, candidatos) {
@@ -152,7 +166,7 @@ function escolher(ad, candidatos) {
   const chave = junto(norm(ad.anunciante).split(" ").slice(0, 2).join(" "));
   let melhor = null, melhorNota = 0;
   for (const c of candidatos) {
-    if (!c.id || !c.duracao || c.duracao > 130) continue;
+    if (!c.id || !c.duracao || c.duracao > 130 || c.vertical || /#shorts?\b/i.test(c.titulo)) continue;
     const ct = norm(c.titulo), cc = junto(norm(c.canal));
     if (NAO_E_O_FILME.test(ct)) continue;
     const canalDaMarca = cc.includes(chave) || (cc.length >= 3 && marca.includes(cc));
@@ -199,6 +213,21 @@ if (anuncios.length < 5) {
   anuncios = (anterior.anuncios || []).map((a) => ({ ...a }));
 }
 for (const ad of anuncios) if (!ad.primeiraVez) ad.primeiraVez = new Date(agora).toISOString();
+
+// revisa vídeos já escolhidos: descarta os verticais (Shorts) e os que saíram do ar
+if (YT_API_KEY) {
+  const comYT = anuncios.filter((a) => a.yt && !a.ytRevisado);
+  try {
+    const det = await detalhes(comYT.map((a) => a.yt));
+    for (const a of comYT) {
+      const d = det[a.yt];
+      if (!d || d.vertical) {
+        console.log("descartado do YouTube:", a.anunciante, a.titulo, d ? "(vertical)" : "(fora do ar)");
+        delete a.yt; delete a.ytTitulo; delete a.ytCanal; delete a.ytChecado;
+      } else a.ytRevisado = true;
+    }
+  } catch (e) { console.log("revisão do YouTube falhou:", e.message); }
+}
 
 // YouTube: prioridade para quem nunca foi procurado, filmes criativos e os mais novos; respeita a cota diária
 let cotaUsada = 0, doYouTube = 0, cotaAcabou = !YT_API_KEY;
