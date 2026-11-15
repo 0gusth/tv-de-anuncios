@@ -6,8 +6,32 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const ISPOT = "https://www.ispot.tv";
 const ARQUIVO = new URL("../dados.json", import.meta.url);
-const MAX_ANUNCIOS = 40;
-const TENTAR_YT_DE_NOVO_DIAS = 3;
+const CACHE = new URL("../cache.json", import.meta.url);   // todo filme já visto (para não reler e guardar a 1ª aparição)
+const MAX_ANUNCIOS = 400;
+const TENTAR_YT_DE_NOVO_DIAS = 7;
+const COTA_YT_POR_RODADA = 9000;   // a API dá 10.000 unidades/dia; cada busca custa ~101
+
+// vitrines do iSpot: geral, mais vistos e as 15 categorias
+const CATEGORIAS = {
+  "apparel-footwear-and-accessories": ["k", "Moda e calçados"],
+  "business-and-legal": ["Y", "Negócios e jurídico"],
+  "education": ["7", "Educação"],
+  "electronics-and-communication": ["A", "Tecnologia e telecom"],
+  "food-and-beverage": ["d", "Alimentos e bebidas"],
+  "health-and-beauty": ["I", "Saúde e beleza"],
+  "home-and-real-estate": ["o", "Casa"],
+  "insurance": ["Z", "Seguros"],
+  "life-and-entertainment": ["w", "Entretenimento"],
+  "pharmaceutical-and-medical": ["7k", "Farmacêutico"],
+  "politics-government-and-organizations": ["q", "Governo e causas"],
+  "restaurants": ["b", "Restaurantes"],
+  "retail-stores": ["2", "Varejo"],
+  "travel": ["5", "Viagem"],
+  "vehicles": ["L", "Automotivo"],
+};
+
+// comercial de oferta/preço (escondido no "modo criativo")
+const OFERTA = /\b(deals?|sale|sales event|offer|special offer|black friday|cyber monday|discount|savings?|save|per line|financing|apr|lease|clearance|limited time|price|prices|bogo|coupon|free shipping)\b|\$\d+|\d+% off/i;
 const NAVEGADOR = {
   "User-Agent": "tv-de-anuncios/1.0 (uso pessoal; github.com/0gusth/tv-de-anuncios)",
   "Accept-Language": "en-US,en;q=0.9",
@@ -42,28 +66,47 @@ function lerAnuncio(html, id, url) {
   const ag = html.match(/<dd[^>]*>((?:(?!<dd)[\s\S])*?)<small[^>]*>[^<]*Creative Agency/);
   const agencia = ag ? semTags(ag[1]).replace(/\s*\.\.\.$/, "") : "";
 
-  return { id, anunciante, titulo, agencia, video, ispot: url };
+  // categoria: o primeiro link para uma das 15 vitrines
+  let categoria = "";
+  for (const m of html.matchAll(/href="(?:https:\/\/www\.ispot\.tv)?\/browse\/[A-Za-z0-9]+\/([a-z0-9-]+)"/g)) {
+    if (CATEGORIAS[m[1]]) { categoria = CATEGORIAS[m[1]][1]; break; }
+  }
+  return { id, anunciante, titulo, agencia, categoria, video, ispot: url };
 }
 
-async function listaDoISpot(conhecidos) {
-  const html = await baixar(ISPOT + "/browse");
-  const vistos = new Set();
-  const ids = [];
-  for (const m of html.matchAll(/href="(?:https:\/\/www\.ispot\.tv)?\/ad\/([A-Za-z0-9]{4})\/([a-z0-9-]+)"/g)) {
-    if (vistos.has(m[1]) || ids.length >= MAX_ANUNCIOS) continue;
-    vistos.add(m[1]);
-    ids.push({ id: m[1], url: `${ISPOT}/ad/${m[1]}/${m[2]}` });
-  }
-  const saida = [];
-  for (const { id, url } of ids) {
-    const antigo = conhecidos[id];
-    if (antigo && antigo.video) { saida.push({ ...antigo }); continue; }
+function linksDeAnuncios(html) {
+  return [...html.matchAll(/href="(?:https:\/\/www\.ispot\.tv)?\/ad\/([A-Za-z0-9]{4})\/([a-z0-9-]+)"/g)]
+    .map((m) => ({ id: m[1], url: `${ISPOT}/ad/${m[1]}/${m[2]}` }));
+}
+
+async function listaDoISpot(cache) {
+  const achados = new Map();   // id → { url, categoria }
+  const vitrines = [["/browse", ""], ["/ad/top-commercials", ""],
+    ...Object.entries(CATEGORIAS).map(([slug, [cod, nome]]) => [`/browse/${cod}/${slug}`, nome])];
+  for (const [caminho, categoria] of vitrines) {
     try {
-      const ad = lerAnuncio(await baixar(url), id, url);
-      if (ad) saida.push(ad);
-      else console.log("sem vídeo:", url);
-    } catch (e) { console.log("falhou:", url, e.message); }
-    await espera(1200);
+      for (const l of linksDeAnuncios(await baixar(ISPOT + caminho))) {
+        const atual = achados.get(l.id);
+        if (!atual) achados.set(l.id, { url: l.url, categoria });
+        else if (!atual.categoria && categoria) atual.categoria = categoria;
+      }
+    } catch (e) { console.log("vitrine falhou:", caminho, e.message); }
+    await espera(1500);
+  }
+  console.log(`${achados.size} comerciais nas vitrines do iSpot`);
+
+  const saida = [];
+  for (const [id, { url, categoria }] of [...achados].slice(0, MAX_ANUNCIOS)) {
+    let ad = cache[id] && cache[id].video ? { ...cache[id] } : null;
+    if (!ad) {
+      try { ad = lerAnuncio(await baixar(url), id, url); }
+      catch (e) { console.log("falhou:", url, e.message); }
+      await espera(1200);
+      if (!ad) continue;
+    }
+    if (categoria) ad.categoria = categoria;
+    ad.oferta = OFERTA.test(ad.titulo);
+    saida.push(ad);
   }
   return saida;
 }
@@ -127,9 +170,10 @@ function escolher(ad, candidatos) {
   return melhor;
 }
 
-async function procurarNoYouTube(ad) {
+async function procurarNoYouTube(ad, contar) {
   const nome = ad.titulo.split(":").pop().trim();
   for (const q of [`${ad.anunciante} ${ad.titulo} commercial`, `${ad.anunciante} "${nome}"`]) {
+    contar();
     const c = escolher(ad, await buscarYouTube(q));
     await espera(300);
     if (c) return { id: c.id, titulo: c.titulo, canal: c.canal };
@@ -140,29 +184,43 @@ async function procurarNoYouTube(ad) {
 // ---------- principal ----------
 let anterior = { anuncios: [] };
 try { anterior = JSON.parse(await readFile(ARQUIVO, "utf8")); } catch (e) {}
-const conhecidos = Object.fromEntries((anterior.anuncios || []).map((a) => [a.id, a]));
+let cache = {};
+try { cache = JSON.parse(await readFile(CACHE, "utf8")); } catch (e) {}
+for (const a of anterior.anuncios || []) if (!cache[a.id]) cache[a.id] = a;
+
+const agora = Date.now();
+const inicio = anterior.inicio || new Date().toISOString();   // 1ª rodada: nada conta como "novo"
 
 let anuncios;
-try { anuncios = await listaDoISpot(conhecidos); }
+try { anuncios = await listaDoISpot(cache); }
 catch (e) { console.log("iSpot fora do ar ou bloqueou:", e.message); anuncios = []; }
 if (anuncios.length < 5) {
   console.log(`Só ${anuncios.length} comerciais lidos — mantendo a lista anterior.`);
   anuncios = (anterior.anuncios || []).map((a) => ({ ...a }));
 }
+for (const ad of anuncios) if (!ad.primeiraVez) ad.primeiraVez = new Date(agora).toISOString();
 
-const agora = Date.now();
-let doYouTube = 0;
+// YouTube: prioridade para quem nunca foi procurado, filmes criativos e os mais novos; respeita a cota diária
+let cotaUsada = 0, doYouTube = 0, cotaAcabou = !YT_API_KEY;
 if (!YT_API_KEY) console.log("Sem YT_API_KEY: pulando a busca no YouTube.");
-for (const ad of anuncios) {
-  if (!YT_API_KEY) { if (ad.yt) doYouTube++; continue; }
-  const recente = ad.ytChecado && agora - ad.ytChecado < TENTAR_YT_DE_NOVO_DIAS * 864e5;
-  if (ad.yt || recente) { if (ad.yt) doYouTube++; continue; }
+const fila = anuncios
+  .filter((ad) => !ad.yt && !(ad.ytChecado && agora - ad.ytChecado < TENTAR_YT_DE_NOVO_DIAS * 864e5))
+  .sort((a, b) => (!!a.ytChecado - !!b.ytChecado) || (a.oferta - b.oferta) || b.primeiraVez.localeCompare(a.primeiraVez));
+for (const ad of fila) {
+  if (cotaAcabou || cotaUsada + 202 > COTA_YT_POR_RODADA) break;
   try {
-    const achado = await procurarNoYouTube(ad);
+    const achado = await procurarNoYouTube(ad, () => (cotaUsada += 101));
     ad.ytChecado = agora;
-    if (achado) { ad.yt = achado.id; ad.ytTitulo = achado.titulo; ad.ytCanal = achado.canal; doYouTube++; }
-  } catch (e) { console.log("YouTube falhou para", ad.anunciante, ad.titulo, e.message); }
+    if (achado) { ad.yt = achado.id; ad.ytTitulo = achado.titulo; ad.ytCanal = achado.canal; }
+  } catch (e) {
+    console.log("YouTube falhou para", ad.anunciante, ad.titulo, e.message);
+    if (/quota/i.test(e.message)) cotaAcabou = true;
+  }
 }
+doYouTube = anuncios.filter((a) => a.yt).length;
 
-await writeFile(ARQUIVO, JSON.stringify({ atualizado: new Date().toISOString(), anuncios }, null, 2) + "\n");
-console.log(`${anuncios.length} comerciais · ${doYouTube} com vídeo do YouTube · ${anuncios.length - doYouTube} pelo iSpot`);
+for (const ad of anuncios) cache[ad.id] = ad;
+await writeFile(CACHE, JSON.stringify(cache) + "\n");
+await writeFile(ARQUIVO, JSON.stringify({ atualizado: new Date().toISOString(), inicio, anuncios }, null, 1) + "\n");
+console.log(`${anuncios.length} comerciais (${anuncios.filter((a) => !a.oferta).length} criativos) · ` +
+  `${doYouTube} com vídeo do YouTube · cota usada ~${cotaUsada} · ${fila.length} ainda sem busca no YouTube`);
