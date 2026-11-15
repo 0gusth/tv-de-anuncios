@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>TV de Anúncios</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #fff; }
+  video, #yt, #yt iframe { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; border: 0; }
+  #yt, video { display: none; }
+  #escudo { position: fixed; inset: 0; }
+  .tarja { position: fixed; left: 48px; bottom: 48px; max-width: 70vw;
+    padding: 18px 22px 16px; background: rgba(0,0,0,.62); border-left: 4px solid #fff;
+    backdrop-filter: blur(6px); }
+  .anunciante { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; opacity: .75; }
+  .titulo { font-size: 28px; font-weight: 700; line-height: 1.15; margin: 6px 0 8px; }
+  .agencia { font-size: 15px; opacity: .85; }
+  .agencia:empty, .fonte:empty { display: none; }
+  .fonte { font-size: 11px; opacity: .45; margin-top: 6px; }
+  .topo { position: fixed; top: 20px; right: 24px; display: flex; gap: 10px; align-items: center;
+    font-size: 12px; opacity: .55; transition: opacity .3s; }
+  .topo:hover { opacity: 1; }
+  button { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.3);
+    border-radius: 4px; padding: 6px 10px; font-size: 12px; cursor: pointer; }
+  button:hover { background: rgba(255,255,255,.25); }
+  .aviso { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; font-size: 16px; opacity: .7; }
+  @media (max-width: 700px) {
+    .tarja { left: 16px; right: 16px; bottom: 24px; max-width: none; }
+    .titulo { font-size: 20px; }
+    .topo { top: 12px; right: 12px; }
+    #status { display: none; }
+  }
+</style>
+</head>
+<body>
+  <video id="tv" playsinline></video>
+  <div id="yt"></div>
+  <div id="escudo"></div>
+  <div class="tarja">
+    <div class="anunciante" id="anunciante"></div>
+    <div class="titulo" id="titulo"></div>
+    <div class="agencia" id="agencia"></div>
+    <div class="fonte" id="fonte"></div>
+  </div>
+  <div class="topo">
+    <span id="status"></span>
+    <button id="som">🔇 Ativar som</button>
+    <button id="proximo">Próximo →</button>
+  </div>
+  <div class="aviso" id="aviso">Carregando…</div>
+  <script src="tv.js"></script>
+</body>
+</html>
