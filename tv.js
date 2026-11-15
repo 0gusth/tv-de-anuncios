@@ -29,8 +29,10 @@ function ehNovo(ad) {
   if (!ad.primeiraVez || !inicio) return false;
   return dia(ad.primeiraVez) > dia(inicio) && Date.now() - new Date(ad.primeiraVez) < DIAS_NOVO * 864e5;
 }
+// "criativo" = não é oferta e tem sinal de trabalho de marca: agência creditada ou filme no canal da marca no YouTube
+const ehCriativo = (ad) => !ad.oferta && !!(ad.agencia || ad.yt);
 function passaNoFiltro(ad) {
-  if (soCriativos && ad.oferta) return false;
+  if (soCriativos && !ehCriativo(ad)) return false;
   if (filtroCategoria && ad.categoria !== filtroCategoria) return false;
   if (filtroAgencia && ad.agencia !== filtroAgencia) return false;
   return true;
@@ -148,7 +150,7 @@ $("som").addEventListener("click", () => {
 // ---------- filtros ----------
 function contar(campo) {
   const n = {};
-  for (const a of lista) if (a[campo] && (!soCriativos || !a.oferta)) n[a[campo]] = (n[a[campo]] || 0) + 1;
+  for (const a of lista) if (a[campo] && (!soCriativos || ehCriativo(a))) n[a[campo]] = (n[a[campo]] || 0) + 1;
   return Object.entries(n).sort((a, b) => a[0].localeCompare(b[0]));
 }
 function montarFiltros() {

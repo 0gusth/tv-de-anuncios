@@ -205,7 +205,8 @@ let cotaUsada = 0, doYouTube = 0, cotaAcabou = !YT_API_KEY;
 if (!YT_API_KEY) console.log("Sem YT_API_KEY: pulando a busca no YouTube.");
 const fila = anuncios
   .filter((ad) => !ad.yt && !(ad.ytChecado && agora - ad.ytChecado < TENTAR_YT_DE_NOVO_DIAS * 864e5))
-  .sort((a, b) => (!!a.ytChecado - !!b.ytChecado) || (a.oferta - b.oferta) || b.primeiraVez.localeCompare(a.primeiraVez));
+  .sort((a, b) => (!!a.ytChecado - !!b.ytChecado) || (a.oferta - b.oferta) || (!a.agencia - !b.agencia) ||
+    b.primeiraVez.localeCompare(a.primeiraVez));   // nunca buscados → não-oferta → com agência → mais novos
 for (const ad of fila) {
   if (cotaAcabou || cotaUsada + 202 > COTA_YT_POR_RODADA) break;
   try {
