@@ -9,9 +9,10 @@ const ARQUIVO = new URL("../dados.json", import.meta.url);
 const MAX_ANUNCIOS = 40;
 const TENTAR_YT_DE_NOVO_DIAS = 3;
 const NAVEGADOR = {
-  "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
+  "User-Agent": "tv-de-anuncios/1.0 (uso pessoal; github.com/0gusth/tv-de-anuncios)",
   "Accept-Language": "en-US,en;q=0.9",
 };
+const YT_API_KEY = process.env.YT_API_KEY || "";   // chave da YouTube Data API (segredo do repositório)
 
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
 async function baixar(url, extra = {}) {
@@ -79,26 +80,26 @@ function bate(w, t) {
 }
 const NAO_E_O_FILME = /\b(review|reaction|react|parody|breakdown|behind the scenes|making of|tv spot)\b/;
 
-function resultados(html) {
-  const m = html.match(/var ytInitialData = (\{.*?\});<\/script>/s);
-  if (!m) return [];
-  const saida = [];
-  (function andar(o) {
-    if (!o || typeof o !== "object" || saida.length >= 12) return;
-    if (o.videoRenderer) {
-      const v = o.videoRenderer;
-      saida.push({
-        id: v.videoId,
-        titulo: v.title?.runs?.[0]?.text || "",
-        canal: v.ownerText?.runs?.[0]?.text || "",
-        duracao: segundos(v.lengthText?.simpleText),
-        verificado: JSON.stringify(v.ownerBadges || "").includes("VERIFIED"),
-      });
-      return;
-    }
-    for (const k in o) andar(o[k]);
-  })(JSON.parse(m[1]));
-  return saida;
+// duração ISO 8601 (PT1M2S) → segundos
+const iso = (d) => { const m = (d || "").match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/); return m ? (+m[1] || 0) * 3600 + (+m[2] || 0) * 60 + (+m[3] || 0) : 0; };
+
+// busca pela YouTube Data API oficial: search (100 unidades) + videos para duração (1 unidade)
+async function buscarYouTube(q) {
+  const p = new URLSearchParams({ part: "snippet", q, type: "video", maxResults: "10", regionCode: "US",
+    relevanceLanguage: "en", videoDuration: "short", key: YT_API_KEY });
+  const busca = await (await fetch("https://www.googleapis.com/youtube/v3/search?" + p)).json();
+  if (busca.error) throw new Error(busca.error.message);
+  const itens = (busca.items || []).filter((i) => i.id && i.id.videoId);
+  if (!itens.length) return [];
+  const ids = itens.map((i) => i.id.videoId).join(",");
+  const det = await (await fetch(`https://www.googleapis.com/youtube/v3/videos?part=contentDetails&id=${ids}&key=${YT_API_KEY}`)).json();
+  const dur = Object.fromEntries((det.items || []).map((v) => [v.id, iso(v.contentDetails && v.contentDetails.duration)]));
+  return itens.map((i) => ({
+    id: i.id.videoId,
+    titulo: entidades(i.snippet.title),
+    canal: entidades(i.snippet.channelTitle),
+    duracao: dur[i.id.videoId] || 0,
+  }));
 }
 
 function escolher(ad, candidatos) {
@@ -118,9 +119,9 @@ function escolher(ad, candidatos) {
     if (nomeDoFilme.length && !nomeDoFilme.some((w) => bate(w, ct))) continue;
     const acertos = tw.filter((w) => bate(w, ct)).length;
     const cobertura = tw.length ? acertos / tw.length : 0;
-    const minimo = tw.length <= 2 ? 1 : (canalDaMarca && c.verificado ? 0.5 : 0.67);
+    const minimo = tw.length <= 2 ? 1 : (canalDaMarca ? 0.5 : 0.67);
     if (cobertura < minimo) continue;
-    const nota = cobertura * 3 + (canalDaMarca ? 2 : 0) + (c.verificado ? 1 : 0) + (c.duracao >= 25 && c.duracao <= 65 ? 0.5 : 0);
+    const nota = cobertura * 3 + (canalDaMarca ? 2 : 0) + (c.duracao >= 25 && c.duracao <= 65 ? 0.5 : 0);
     if (nota > melhorNota) { melhor = c; melhorNota = nota; }
   }
   return melhor;
@@ -129,12 +130,8 @@ function escolher(ad, candidatos) {
 async function procurarNoYouTube(ad) {
   const nome = ad.titulo.split(":").pop().trim();
   for (const q of [`${ad.anunciante} ${ad.titulo} commercial`, `${ad.anunciante} "${nome}"`]) {
-    const url = "https://www.youtube.com/results?hl=en&gl=US&persist_hl=0&search_query=" + encodeURIComponent(q);
-    const html = await baixar(url, { Cookie: "SOCS=CAI; CONSENT=YES+1" });
-    const lista = resultados(html);
-    if (!lista.length) console.log("YouTube sem resultados legíveis para:", q);
-    const c = escolher(ad, lista);
-    await espera(800);
+    const c = escolher(ad, await buscarYouTube(q));
+    await espera(300);
     if (c) return { id: c.id, titulo: c.titulo, canal: c.canal };
   }
   return null;
@@ -155,7 +152,9 @@ if (anuncios.length < 5) {
 
 const agora = Date.now();
 let doYouTube = 0;
+if (!YT_API_KEY) console.log("Sem YT_API_KEY: pulando a busca no YouTube.");
 for (const ad of anuncios) {
+  if (!YT_API_KEY) { if (ad.yt) doYouTube++; continue; }
   const recente = ad.ytChecado && agora - ad.ytChecado < TENTAR_YT_DE_NOVO_DIAS * 864e5;
   if (ad.yt || recente) { if (ad.yt) doYouTube++; continue; }
   try {

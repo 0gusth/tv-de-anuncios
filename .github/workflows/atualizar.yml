@@ -17,6 +17,8 @@ jobs:
         with:
           node-version: 20
       - run: node scripts/atualizar.mjs
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
       - name: Salvar dados.json
         run: |
           if git diff --quiet dados.json; then echo "sem mudanças"; exit 0; fi
