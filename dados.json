@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-15T20:59:03.640Z",
+ "atualizado": "2026-11-16T19:40:28.049Z",
  "inicio": "2026-11-15T20:41:16.233Z",
  "anuncios": [
   {
@@ -11,6 +11,43 @@
    "ispot": "https://www.ispot.tv/ad/SbTG",
    "ytChecado": 1794774359409,
    "categoria": "Varejo",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "S22X",
+   "anunciante": "Old Navy",
+   "titulo": "Now Boarding: The Jingle Jet",
+   "agencia": "",
+   "video": "https://videos-cdn.ispot.tv/ad/8851/S22X-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S22X",
+   "ytChecado": 1794774359409,
+   "yt": "LtspOgn6i34",
+   "ytTitulo": "Now Boarding: THE JINGLE JET",
+   "ytCanal": "Old Navy",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
+  },
+  {
+   "id": "S1D0",
+   "anunciante": "Walmart",
+   "titulo": "Black Friday Deals: The Muppets: Sign",
+   "agencia": "",
+   "video": "https://videos-cdn.ispot.tv/ad/d491/S1D0-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S1D0",
+   "ytChecado": 1794774359409,
+   "oferta": true,
+   "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "Sbmk",
+   "anunciante": "Amazon",
+   "titulo": "Holidays: Cat Tree",
+   "agencia": "",
+   "video": "https://videos-cdn.ispot.tv/ad/fbc1/Sbmk-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/Sbmk",
+   "ytChecado": 1794774359409,
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
@@ -40,64 +77,38 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "S1D0",
-   "anunciante": "Walmart",
-   "titulo": "Black Friday Deals: The Muppets: Sign",
+   "id": "gqkx",
+   "anunciante": "Starlink",
+   "titulo": "The Future",
    "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/d491/S1D0-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S1D0",
+   "video": "https://videos-cdn.ispot.tv/ad/bc35/gqkx-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/gqkx",
    "ytChecado": 1794774359409,
-   "oferta": true,
+   "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "StWh",
-   "anunciante": "Nationwide Insurance",
-   "titulo": "Sign",
+   "id": "S2iC",
+   "anunciante": "Progressive",
+   "titulo": "Dr. Rick: Gift",
    "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/7773/StWh-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/StWh",
-   "yt": "F3t5yLk1gv0",
-   "ytTitulo": "Nationwide is So Much More | Paintin’ Manning & Saquon Barkley: Sign :30",
-   "ytCanal": "Nationwide",
    "categoria": "Seguros",
+   "video": "https://videos-cdn.ispot.tv/ad/f3e0/S2iC-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2iC/progressive-dr-rick-gift",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
   },
   {
-   "id": "S274",
-   "anunciante": "Burger King",
-   "titulo": "Chicken Nuggets: We Delivered",
-   "agencia": "OKRP",
-   "video": "https://videos-cdn.ispot.tv/ad/73ce/S274-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S274",
-   "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "Sbmk",
-   "anunciante": "Amazon",
-   "titulo": "Holidays: Cat Tree",
+   "id": "Swdk",
+   "anunciante": "Progressive",
+   "titulo": "Dr. Rick: Tuning In",
    "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/fbc1/Sbmk-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/Sbmk",
+   "video": "https://videos-cdn.ispot.tv/ad/2c6e/Swdk-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/Swdk/progressive-dr-rick-watch-the-game",
    "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "S22X",
-   "anunciante": "Old Navy",
-   "titulo": "Now Boarding: The Jingle Jet",
-   "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/8851/S22X-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S22X",
-   "ytChecado": 1794774359409,
-   "yt": "LtspOgn6i34",
-   "ytTitulo": "Now Boarding: THE JINGLE JET",
-   "ytCanal": "Old Navy",
+   "yt": "Ufzt44z-Ng0",
+   "ytTitulo": "Dr. Rick | Tuning In | Progressive Insurance Commercial",
+   "ytCanal": "Progressive Insurance",
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z",
    "ytRevisado": true
@@ -118,15 +129,139 @@
    "ytRevisado": true
   },
   {
-   "id": "Sb5g",
-   "anunciante": "UnitedHealthcare",
-   "titulo": "AARP Medicare Advantage: Elige su cobertura",
+   "id": "T2d2",
+   "anunciante": "Capital One",
+   "titulo": "Savor Card: Cash Back Kitchen",
    "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/a959/Sb5g-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/Sb5g",
+   "video": "https://videos-cdn.ispot.tv/ad/602e/T2d2-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/T2d2",
+   "ytChecado": 1794774359409,
+   "yt": "hOrYFU4r_G8",
+   "ytTitulo": "Savor Card - Cash Back Kitchen :30 | Capital One",
+   "ytCanal": "Capital One",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
+  },
+  {
+   "id": "gQag",
+   "anunciante": "Walt Disney Pictures",
+   "titulo": "Hexed TV Movie Trailer",
+   "agencia": "",
+   "categoria": "Entretenimento",
+   "video": "https://videos-cdn.ispot.tv/ad/0b32/gQag-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/gQag/hexed-movie-trailer",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "5MOs",
+   "anunciante": "Marshalls",
+   "titulo": "Holidays: Travel Far and Wide",
+   "agencia": "Mindshare ... Media Agency , Wieden+Kennedy",
+   "categoria": "Varejo",
+   "video": "https://videos-cdn.ispot.tv/ad/d649/5MOs-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/5MOs/marshalls-travel-far-and-wide-song-by-madonna",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794775276233
+  },
+  {
+   "id": "Sbg2",
+   "anunciante": "McDonald's",
+   "titulo": "Wait for It",
+   "agencia": "DDB Chicago ... Digital Agency , Wieden+Kennedy",
+   "categoria": "Restaurantes",
+   "video": "https://videos-cdn.ispot.tv/ad/9080/Sbg2-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/Sbg2/mcdonalds-quarter-pounder-with-cheese-meal-wait-for-it",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z",
+   "ytChecado": 1794857864221,
+   "yt": "7bKLp3SYPjQ",
+   "ytTitulo": "Some Things Just Can't Wait: McDonald's Paraguay Impacientes Commercial",
+   "ytCanal": "World of Advertising"
+  },
+  {
+   "id": "gx4t",
+   "anunciante": "DraftKings",
+   "titulo": "Memorial Day: Proud To Support Veterans",
+   "agencia": "",
+   "categoria": "Entretenimento",
+   "video": "https://videos-cdn.ispot.tv/ad/6b03/gx4t-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/gx4t/draftkings-serves-memorial-day-proud-to-support-veterans",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "SZL0",
+   "anunciante": "The Home Depot",
+   "titulo": "Organizing the Garage",
+   "agencia": "",
+   "categoria": "Varejo",
+   "video": "https://videos-cdn.ispot.tv/ad/eee6/SZL0-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SZL0/the-home-depot-organizing-the-garage-featuring-nick-saban",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "Sd8r",
+   "anunciante": "Peloton",
+   "titulo": "Let Yourself Run",
+   "agencia": "",
+   "categoria": "Saúde e beleza",
+   "video": "https://videos-cdn.ispot.tv/ad/06e7/Sd8r-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/Sd8r/peloton-tread-flex-let-yourself-run-featuring-miley-cyrus-song-by-miley-cyrus",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "S2ij",
+   "anunciante": "Jersey Mike's",
+   "titulo": "Delivering Game Day: Raiders vs. Jets",
+   "agencia": "Highdive Advertising",
+   "categoria": "Restaurantes",
+   "video": "https://videos-cdn.ispot.tv/ad/63b4/S2ij-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2ij/jersey-mikes-delivering-game-day-raiders-vs-jets",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z",
+   "ytChecado": 1794857864221
+  },
+  {
+   "id": "S274",
+   "anunciante": "Burger King",
+   "titulo": "Chicken Nuggets: We Delivered",
+   "agencia": "OKRP",
+   "video": "https://videos-cdn.ispot.tv/ad/73ce/S274-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S274",
    "ytChecado": 1794774359409,
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "gsBx",
+   "anunciante": "Capital One (Banking)",
+   "titulo": "Mom and Dad",
+   "agencia": "",
+   "categoria": "Negócios e jurídico",
+   "video": "https://videos-cdn.ispot.tv/ad/462a/gsBx-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/gsBx/capital-one-mom-and-dad",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "SYli",
+   "anunciante": "State Farm",
+   "titulo": "For Mike",
+   "agencia": "Highdive",
+   "video": "https://videos-cdn.ispot.tv/ad/14f1/SYli-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SYli",
+   "ytChecado": 1794774359409,
+   "yt": "z9vvIG5eXfQ",
+   "ytTitulo": "For Mike :30 (feat. Patrick Mahomes) | State Farm® Commercial",
+   "ytCanal": "State Farm Insurance",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "S7KX",
@@ -145,48 +280,6 @@
    "ytRevisado": true
   },
   {
-   "id": "SoZa",
-   "anunciante": "American Express",
-   "titulo": "Introducing Amex Corporate",
-   "agencia": "mcgarrybowen",
-   "video": "https://videos-cdn.ispot.tv/ad/00de/SoZa-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SoZa",
-   "ytChecado": 1794774359409,
-   "yt": "lugcrIqccss",
-   "ytTitulo": "Amex Corporate | Introducing Amex Corporate :30 | American Express Business",
-   "ytCanal": "American Express Business",
-   "categoria": "Negócios e jurídico",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
-  },
-  {
-   "id": "S2bN",
-   "anunciante": "Verizon",
-   "titulo": "The Workshop: Simplicity Plan $30 Per Line",
-   "agencia": "Verizon In-House",
-   "video": "https://videos-cdn.ispot.tv/ad/657b/S2bN-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S2bN",
-   "ytChecado": 1794774359409,
-   "oferta": true,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "SYli",
-   "anunciante": "State Farm",
-   "titulo": "For Mike",
-   "agencia": "Highdive",
-   "video": "https://videos-cdn.ispot.tv/ad/14f1/SYli-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SYli",
-   "ytChecado": 1794774359409,
-   "yt": "z9vvIG5eXfQ",
-   "ytTitulo": "For Mike :30 (feat. Patrick Mahomes) | State Farm® Commercial",
-   "ytCanal": "State Farm Insurance",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
-  },
-  {
    "id": "SbwO",
    "anunciante": "Google",
    "titulo": "Bad Weather",
@@ -196,106 +289,6 @@
    "ytChecado": 1794774359409,
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "T2d2",
-   "anunciante": "Capital One",
-   "titulo": "Savor Card: Cash Back Kitchen",
-   "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/602e/T2d2-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/T2d2",
-   "ytChecado": 1794774359409,
-   "yt": "hOrYFU4r_G8",
-   "ytTitulo": "Savor Card - Cash Back Kitchen :30 | Capital One",
-   "ytCanal": "Capital One",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
-  },
-  {
-   "id": "gqkx",
-   "anunciante": "Starlink",
-   "titulo": "The Future",
-   "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/bc35/gqkx-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/gqkx",
-   "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "Stp1",
-   "anunciante": "NFL Shop",
-   "titulo": "That Style Grind: Special Offer",
-   "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/fb34/Stp1-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/Stp1",
-   "ytChecado": 1794774359409,
-   "oferta": true,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "SbG4",
-   "anunciante": "NFL",
-   "titulo": "It Takes All of Us: Gamechanger",
-   "agencia": "72andSunny",
-   "video": "https://videos-cdn.ispot.tv/ad/a033/SbG4-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SbG4",
-   "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "SqP2",
-   "anunciante": "Navy Federal Credit Union",
-   "titulo": "Mission Assist: Auto",
-   "agencia": "MullenLowe",
-   "video": "https://videos-cdn.ispot.tv/ad/df3e/SqP2-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SqP2",
-   "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "SANM",
-   "anunciante": "New Balance",
-   "titulo": "We Got Now: Football",
-   "agencia": "VML",
-   "video": "https://videos-cdn.ispot.tv/ad/9df5/SANM-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SANM",
-   "ytChecado": 1794774359409,
-   "yt": "rH-YloK2Te4",
-   "ytTitulo": "New Balance Global Football | We Got Now | 2026",
-   "ytCanal": "newbalance",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
-  },
-  {
-   "id": "SbZG",
-   "anunciante": "Chevrolet",
-   "titulo": "Silverado HD: Some Jobs Demand More",
-   "agencia": "Commonwealth//McCann",
-   "video": "https://videos-cdn.ispot.tv/ad/8327/SbZG-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SbZG",
-   "ytChecado": 1794774359409,
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "Swdk",
-   "anunciante": "Progressive",
-   "titulo": "Dr. Rick: Tuning In",
-   "agencia": "",
-   "video": "https://videos-cdn.ispot.tv/ad/2c6e/Swdk-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/Swdk/progressive-dr-rick-watch-the-game",
-   "ytChecado": 1794774359409,
-   "yt": "Ufzt44z-Ng0",
-   "ytTitulo": "Dr. Rick | Tuning In | Progressive Insurance Commercial",
-   "ytCanal": "Progressive Insurance",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytRevisado": true
   },
   {
    "id": "S2dD",
@@ -314,16 +307,27 @@
    "ytRevisado": true
   },
   {
-   "id": "5MOs",
-   "anunciante": "Marshalls",
-   "titulo": "Holidays: Travel Far and Wide",
-   "agencia": "Mindshare ... Media Agency , Wieden+Kennedy",
-   "categoria": "Varejo",
-   "video": "https://videos-cdn.ispot.tv/ad/d649/5MOs-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/5MOs/marshalls-travel-far-and-wide-song-by-madonna",
+   "id": "6oVv",
+   "anunciante": "King",
+   "titulo": "Float Evergreen",
+   "agencia": "",
+   "categoria": "Entretenimento",
+   "video": "https://videos-cdn.ispot.tv/ad/5a96/6oVv-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/6oVv/candy-crush-saga-float-evergreen",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytChecado": 1794775276233
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "S2xT",
+   "anunciante": "Papa Johns",
+   "titulo": "Always Chasing Better",
+   "agencia": "Camp+King",
+   "categoria": "Restaurantes",
+   "video": "https://videos-cdn.ispot.tv/ad/2a2b/S2xT-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2xT/papa-johns-always-chasing-better",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "So9C",
@@ -342,16 +346,30 @@
    "ytRevisado": true
   },
   {
-   "id": "S1Wi",
-   "anunciante": "GMC",
-   "titulo": "THE Truck: Snow' [T2]",
-   "agencia": "Carat ... Media Agency , Engage M-1",
-   "categoria": "Automotivo",
-   "video": "https://videos-cdn.ispot.tv/ad/193d/S1Wi-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S1Wi/gmc-black-friday-the-truck-snow-t2",
+   "id": "S14M",
+   "anunciante": "Peacock TV",
+   "titulo": "The Good Daughter",
+   "agencia": "",
+   "categoria": "Entretenimento",
+   "video": "https://videos-cdn.ispot.tv/ad/8791/S5L0-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S14M/peacock-tv-the-good-daughter",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z",
-   "ytChecado": 1794775276233
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "SbOe",
+   "anunciante": "Popeyes",
+   "titulo": "THAT Chicken",
+   "agencia": "McKinney",
+   "categoria": "Restaurantes",
+   "video": "https://videos-cdn.ispot.tv/ad/9b87/SbOe-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SbOe/popeyes-signature-chicken-that-chicken",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z",
+   "ytChecado": 1794857864221,
+   "yt": "gR1GoEBQr0w",
+   "ytTitulo": "THAT Chicken from Popeyes Deserves a $6 Big Box | The Film",
+   "ytCanal": "Popeyes"
   },
   {
    "id": "SbcT",
@@ -704,6 +722,22 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
+   "id": "SoZa",
+   "anunciante": "American Express",
+   "titulo": "Introducing Amex Corporate",
+   "agencia": "mcgarrybowen",
+   "video": "https://videos-cdn.ispot.tv/ad/00de/SoZa-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SoZa",
+   "ytChecado": 1794774359409,
+   "yt": "lugcrIqccss",
+   "ytTitulo": "Amex Corporate | Introducing Amex Corporate :30 | American Express Business",
+   "ytCanal": "American Express Business",
+   "categoria": "Negócios e jurídico",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
+  },
+  {
    "id": "SoIr",
    "anunciante": "Prudential",
    "titulo": "Conga",
@@ -804,7 +838,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/3d82/SYu8-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SYu8/american-express-platinum-us-open-the-worlds-best",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SYum",
@@ -815,7 +850,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/bbf9/SYum-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SYum/american-express-platinum-us-open-on-top-of-the-world",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SVt4",
@@ -870,7 +906,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/96e5/g4p1-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g4p1/rippling-regentech",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "g4p2",
@@ -1123,7 +1160,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/f9d4/TooB-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/TooB/grand-canyon-university-keisha-ritchie",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "fJZN",
@@ -1134,7 +1172,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/990d/fJZN-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/fJZN/rosetta-stone-home-at-the-club",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "Z0yYY-cved8",
+   "ytTitulo": "Rosetta Stone Now We're Talking: Home at the Club",
+   "ytCanal": "Rosetta Stone"
   },
   {
    "id": "S1qK",
@@ -1145,7 +1187,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/2759/S1qK-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/S1qK/verizon-the-workshop-home-internet-featuring-martin-short-megan-stalter-marsai-martin",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "S2A3",
@@ -1156,7 +1199,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/d809/S2A3-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/S2A3/verizon-holidays-the-twin-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "S2Ai",
@@ -1167,7 +1211,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/cc6e/S2Ai-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/S2Ai/verizon-slow-dance-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SOxS",
@@ -1233,7 +1278,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/38bf/Sn4C-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Sn4C/spectrum-supporting-youth-football",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SnkZ",
@@ -1255,7 +1301,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/33b2/SZzm-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SZzm/oura-wear-your-best-life",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "szmzlH_AaFU",
+   "ytTitulo": "Wear Your Best Life",
+   "ytCanal": "ŌURA"
   },
   {
    "id": "SZ7h",
@@ -1288,7 +1338,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/eedf/Soxq-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Soxq/apple-iphone-18-pro-variable-aperture",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SoFK",
@@ -1365,7 +1416,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/304d/SIeH-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SIeH/spectrum-never-miss-mlb",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SIJx",
@@ -1376,7 +1428,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/502d/SIJx-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SIJx/apple-iphone-18-pro-longest-battery-life",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "DDnNc60onT4",
+   "ytTitulo": "iPhone 18 Pro: The ultimate performance and camera of any iPhone, with exceptional battery life.",
+   "ytCanal": "Apple"
   },
   {
    "id": "SdxV",
@@ -1387,7 +1443,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/65a5/SdxV-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdxV/samsung-galaxy-z-fold8-super-fan-song-by-riize",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SdZF",
@@ -1398,7 +1455,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/a0cf/SdZF-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdZF/t-mobile-pass-it-on-iphone-18-pro-on-us-launch",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "kV8YSfEp0d8",
+   "ytTitulo": "Pass It On – iPhone 18 Pro On Us :30 | T-Mobile Commercial (2026)",
+   "ytCanal": "Keith P."
   },
   {
    "id": "SqV3",
@@ -1409,7 +1470,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/03b8/SqV3-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SqV3/baileys-irish-cream-bring-on-the-baileys-skater",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SO8m",
@@ -1475,7 +1537,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/2ff8/SAvM-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SAvM/johnnie-walker-black-label-highball",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "cVutGG3-0t8",
+   "ytTitulo": "JW Johnnie & Lemon Highball",
+   "ytCanal": "Johnnie Walker"
   },
   {
    "id": "SA0D",
@@ -1541,7 +1607,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/6bd6/SV8a-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SV8a/bud-light-armchair-featuring-peyton-manning",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "1SwC07ZyKmw",
+   "ytTitulo": "Bud Light x Peyton Manning | “Armchair”",
+   "ytCanal": "Bud Light"
   },
   {
    "id": "g9Um",
@@ -1574,7 +1644,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/7338/g9sK-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g9sK/chomps-the-lookout",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "g9sO",
@@ -1651,7 +1722,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/571e/g4DC-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g4DC/bud-light-the-move-featuring-peyton-manning-shane-gillis",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "jc0G1umCECc",
+   "ytTitulo": "Bud Light x Shane Gillis x Peyton Manning | “The Move”",
+   "ytCanal": "Bud Light"
   },
   {
    "id": "gvrw",
@@ -1918,6 +1993,28 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
+   "id": "S2eL",
+   "anunciante": "SimpliSafe",
+   "titulo": "26 Seconds: 70% Off",
+   "agencia": "",
+   "categoria": "Casa",
+   "video": "https://videos-cdn.ispot.tv/ad/576b/S2eL-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2eL/simplisafe-26-seconds-70-off",
+   "oferta": true,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
+   "id": "S21w",
+   "anunciante": "Vyper Industrial",
+   "titulo": "Deals for the Whole Shop",
+   "agencia": "",
+   "categoria": "Casa",
+   "video": "https://videos-cdn.ispot.tv/ad/3484/S21w-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S21w/vyper-industrial-black-friday-deals-for-the-whole-shop",
+   "oferta": true,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
    "id": "SOjO",
    "anunciante": "SimpliSafe",
    "titulo": "Security vs. Surveillance",
@@ -2069,7 +2166,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/0068/gcOJ-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gcOJ/a-place-for-mom-older",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "-8ooGABRFXE",
+   "ytTitulo": "My Best Friend Is Getting Older | A Place for Mom Commercial (30 sec)",
+   "ytCanal": "A Place for Mom"
   },
   {
    "id": "ghBp",
@@ -2149,28 +2250,6 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "grox",
-   "anunciante": "Clorox",
-   "titulo": "Cherry Blossom",
-   "agencia": "",
-   "categoria": "Casa",
-   "video": "https://videos-cdn.ispot.tv/ad/307a/grox-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/grox/clorox-scentiva-cherry-blossom",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "gbTy",
-   "anunciante": "Kingsford",
-   "titulo": "Inner Peace",
-   "agencia": "",
-   "categoria": "Casa",
-   "video": "https://videos-cdn.ispot.tv/ad/3076/gbTy-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/gbTy/kingsford-inner-peace",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
    "id": "SqD6",
    "anunciante": "UnitedHealthcare",
    "titulo": "Renata",
@@ -2223,7 +2302,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/fa84/Stcc-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Stcc/allstate-lightning-strikes-featuring-judy-greer",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "StHi",
@@ -2257,6 +2337,21 @@
    "ispot": "https://www.ispot.tv/ad/StHN/ethos-testimonial-erin-andrews-podcast-having-my-son",
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "StWh",
+   "anunciante": "Nationwide Insurance",
+   "titulo": "Sign",
+   "agencia": "",
+   "video": "https://videos-cdn.ispot.tv/ad/7773/StWh-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/StWh",
+   "yt": "F3t5yLk1gv0",
+   "ytTitulo": "Nationwide is So Much More | Paintin’ Manning & Saquon Barkley: Sign :30",
+   "ytCanal": "Nationwide",
+   "categoria": "Seguros",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytRevisado": true
   },
   {
    "id": "StjC",
@@ -2402,6 +2497,17 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
+   "id": "S2Za",
+   "anunciante": "Tennis Express",
+   "titulo": "Select Shoes, Bags and More",
+   "agencia": "",
+   "categoria": "Entretenimento",
+   "video": "https://videos-cdn.ispot.tv/ad/f16e/S2Za-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2Za/tennis-express-flash-sale-select-shoes-bags-and-more",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
+  },
+  {
    "id": "SqLD",
    "anunciante": "Ancestry",
    "titulo": "DNA Ticker $34",
@@ -2509,7 +2615,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/962e/SoR3-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SoR3/fanduel-sportsbook-nfl-your-most-rewarding-season-ever-live-parlays",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "Solj",
@@ -2655,15 +2762,15 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "S7Ad",
-   "anunciante": "Blue Harbor Entertainment",
-   "titulo": "God with Us TV Movie Trailer",
+   "id": "S2q4",
+   "anunciante": "Zepbound",
+   "titulo": "Weight Management: 48 lbs",
    "agencia": "",
-   "categoria": "Entretenimento",
-   "video": "https://videos-cdn.ispot.tv/ad/78df/S7Ad-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S7Ad/god-with-us-movie-trailer",
+   "categoria": "Farmacêutico",
+   "video": "https://videos-cdn.ispot.tv/ad/6764/S2q4-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/S2q4/zepbound-weight-management-48-lbs",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
   },
   {
    "id": "S278",
@@ -2886,17 +2993,6 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "S7cT",
-   "anunciante": "VYVGART (CIDP)",
-   "titulo": "Reverse the Order: Explorer and Biker",
-   "agencia": "",
-   "categoria": "Farmacêutico",
-   "video": "https://videos-cdn.ispot.tv/ad/cc59/S7cT-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/S7cT/vyvgart-reverse-the-order-explorer-and-biker",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
    "id": "Stsp",
    "anunciante": "Tim Tebow Foundation",
    "titulo": "Sextortion",
@@ -3004,7 +3100,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/a933/SdGt-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdGt/american-cancer-society-gina",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SdGn",
@@ -3015,7 +3112,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/53ee/SdGn-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdGn/american-cancer-society-gina-featuring-sheryl-lee-ralph",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SdGo",
@@ -3026,7 +3124,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/c7d3/SdGo-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdGo/american-cancer-society-gina-featuring-sheryl-lee-ralph",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SdGZ",
@@ -3037,7 +3136,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/3010/SdGZ-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SdGZ/american-cancer-society-gina",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SADF",
@@ -3125,7 +3225,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/0ccd/gedH-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gedH/american-cancer-society-cancer-survivors-month",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "gedF",
@@ -3147,7 +3248,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/b138/gedl-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gedl/american-cancer-society-cancer-survivors-month",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "guBG",
@@ -3191,7 +3293,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/bd7c/Sorw-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Sorw/dominos-domino-made-not-to-share",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "Sony",
@@ -3268,7 +3371,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/8e66/g9TC-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g9TC/dominos-beta-testers-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "2pI3o4aTw0w",
+   "ytTitulo": "Domino’s Beta Testers - Paid Testers :15",
+   "ytCanal": "Domino's Pizza"
   },
   {
    "id": "g9TM",
@@ -3279,7 +3386,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/d354/g9TM-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g9TM/dominos-smores-lava-cakes-cake-flight",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "g9Tr",
@@ -3290,7 +3398,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/7eea/g9Tr-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/g9Tr/dominos-beta-testers",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "2pI3o4aTw0w",
+   "ytTitulo": "Domino’s Beta Testers - Paid Testers :15",
+   "ytCanal": "Domino's Pizza"
   },
   {
    "id": "gUlt",
@@ -3345,7 +3457,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/e772/gcBc-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gcBc/dennys-under-10-slammin-meal-deals-welcome-to-dennys-featuring-the-mcfarlands",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "69MG8h9KzJ0",
+   "ytTitulo": "1977 Welcome to Denny's commercial #2",
+   "ytCanal": "The Media Hoarder"
   },
   {
    "id": "gcB8",
@@ -3356,7 +3472,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/c07c/gcB8-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gcB8/dennys-menos-de-10-men-a-todo-slam-esto-es-dennys-con-los-mcfarlands-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "gcOR",
@@ -3378,7 +3495,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/fb91/gmSG-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/gmSG/wendys-the-minions-are-coming-to-wendys",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "9Zh3fZiv_VU",
+   "ytTitulo": "Los Minions llegan a Wendy's... FINAL INESPERADO 😅",
+   "ytCanal": "Wendy's México"
   },
   {
    "id": "gmqF",
@@ -3444,18 +3565,22 @@
    "video": "https://videos-cdn.ispot.tv/ad/a7c5/SboX-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SboX/burlington-holidays-house-of-burl-featuring-amaya-espinal-kaylor-martin",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "BqsjrcbuUAM",
+   "ytTitulo": "Burlington Presents: House of Burl",
+   "ytCanal": "Burlington"
   },
   {
-   "id": "SbIT",
+   "id": "SbIG",
    "anunciante": "Dick's Sporting Goods",
    "titulo": "2026 Holidays: Top Gifts",
    "agencia": "",
    "categoria": "Varejo",
-   "video": "https://videos-cdn.ispot.tv/ad/b627/SbIT-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SbIT/dicks-sporting-goods-2026-holidays-top-gifts",
+   "video": "https://videos-cdn.ispot.tv/ad/1aa4/SbIG-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SbIG/dicks-sporting-goods-2026-holidays-top-gifts",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
   },
   {
    "id": "SbI5",
@@ -3488,7 +3613,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/ecd3/SqCT-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SqCT/sephora-at-kohls-sephora-savings-event-mam-kohls-sephora-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SqC1",
@@ -3521,7 +3647,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/9592/SOmv-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SOmv/kohls-mam-kohls-brand-holiday-north-kohls-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SOay",
@@ -3532,7 +3659,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/5299/SOay-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SOay/target-orientation-tour-featuring-darcy-carden",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SZoK",
@@ -3543,7 +3671,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/5021/SZoK-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SZoK/kohls-mam-kohls-fall-style-spanish",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "N7ChJSwPPJQ",
+   "ytTitulo": "#OOTD: Summer-to-fall style | Kohl’s",
+   "ytCanal": "Kohl's"
   },
   {
    "id": "SZot",
@@ -3642,7 +3774,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/ad92/SwmS-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SwmS/jcpenney-teachers-yes-jcpenney",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "u5U8walmbjE",
+   "ytTitulo": "Teachers | Yes, JCPenney",
+   "ytCanal": "JCPenney"
   },
   {
    "id": "SAyf",
@@ -3664,7 +3800,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/c8b8/SbAI-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SbAI/expedia-going-places-ski",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "SOYD",
@@ -3675,7 +3812,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/9107/SOYD-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SOYD/hilton-hotels-time-machine",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "St9n",
@@ -3686,7 +3824,8 @@
    "video": "https://videos-cdn.ispot.tv/ad/413e/St9n-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/St9n/hilton-hotels-secret-society",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221
   },
   {
    "id": "Sn7f",
@@ -3697,7 +3836,11 @@
    "video": "https://videos-cdn.ispot.tv/ad/813e/Sn7f-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Sn7f/southwest-airlines-meetings",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-15T20:41:16.233Z",
+   "ytChecado": 1794857864221,
+   "yt": "Yu4WOtt6p7Q",
+   "ytTitulo": "Meetings :30 | Southwest Airlines®",
+   "ytCanal": "Southwest Airlines"
   },
   {
    "id": "SZ5y",
@@ -3707,6 +3850,17 @@
    "categoria": "Viagem",
    "video": "https://videos-cdn.ispot.tv/ad/fc23/SZ5y-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/SZ5y/biltmore-christmas-at-biltmore",
+   "oferta": false,
+   "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "SA0M",
+   "anunciante": "Viking Cruises",
+   "titulo": "Rivers: Closer to the Heart of Europe",
+   "agencia": "",
+   "categoria": "Viagem",
+   "video": "https://videos-cdn.ispot.tv/ad/1dec/SA0M-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SA0M/viking-cruises-rivers-closer-to-the-heart-of-europe",
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
@@ -3722,15 +3876,15 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "SA0M",
-   "anunciante": "Viking Cruises",
-   "titulo": "Rivers: Closer to the Heart of Europe",
+   "id": "SYQf",
+   "anunciante": "Carnival",
+   "titulo": "This Is Paradise Collection",
    "agencia": "",
    "categoria": "Viagem",
-   "video": "https://videos-cdn.ispot.tv/ad/1dec/SA0M-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SA0M/viking-cruises-rivers-closer-to-the-heart-of-europe",
+   "video": "https://videos-cdn.ispot.tv/ad/6e1d/SYQf-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SYQf/carnival-this-is-paradise-collection",
    "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
   },
   {
    "id": "SVby",
@@ -3873,17 +4027,6 @@
    "video": "https://videos-cdn.ispot.tv/ad/9050/Beas-video-sm.mp4",
    "ispot": "https://www.ispot.tv/ad/Beas/carnival-find-your-fun-again-40-off-featuring-nick-offerman",
    "oferta": true,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
-   "id": "Beau",
-   "anunciante": "Carnival",
-   "titulo": "Find Your Fun Again",
-   "agencia": "",
-   "categoria": "Viagem",
-   "video": "https://videos-cdn.ispot.tv/ad/070d/Beau-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/Beau/carnival-find-your-fun-again-featuring-nick-offerman",
-   "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
@@ -4074,17 +4217,6 @@
    "primeiraVez": "2026-11-15T20:41:16.233Z"
   },
   {
-   "id": "SoZz",
-   "anunciante": "Ram Trucks",
-   "titulo": "Nothing Stops Football' [T1]",
-   "agencia": "",
-   "categoria": "Automotivo",
-   "video": "https://videos-cdn.ispot.tv/ad/a662/SoZz-video-sm.mp4",
-   "ispot": "https://www.ispot.tv/ad/SoZz/ram-trucks-nothing-stops-football-spanish-t1",
-   "oferta": false,
-   "primeiraVez": "2026-11-15T20:41:16.233Z"
-  },
-  {
    "id": "SIvT",
    "anunciante": "Cadillac",
    "titulo": "Leaving the City' [T2]",
@@ -4149,6 +4281,17 @@
    "ispot": "https://www.ispot.tv/ad/SIJO/acura-performance-speaks-for-itself-song-by-moby-t1",
    "oferta": false,
    "primeiraVez": "2026-11-15T20:41:16.233Z"
+  },
+  {
+   "id": "SIW1",
+   "anunciante": "Carvana",
+   "titulo": "The Big Diesel",
+   "agencia": "",
+   "categoria": "Automotivo",
+   "video": "https://videos-cdn.ispot.tv/ad/4a2b/SIW1-video-sm.mp4",
+   "ispot": "https://www.ispot.tv/ad/SIW1/carvana-the-big-diesel-featuring-shaquille-oneal",
+   "oferta": false,
+   "primeiraVez": "2026-11-16T19:37:44.221Z"
   }
  ]
 }
